@@ -1,0 +1,11 @@
+[Desktop Entry]
+Version=1.0
+Name=app.desktop
+Comment=Start DP-1 with custom DP-1 mode
+Exec=/home/setDP-1.sh
+Terminal=true
+Type=Application
+X-GNOME-Autostart-Phase=Initialization
+X-GNOME-HiddenUnderSystemd=true
+X-KDE-autostart-phase=1
+X-KeepTerminal=true
