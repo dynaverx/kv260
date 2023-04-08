@@ -1,3 +1,16 @@
+xsct% ta
+  1  PS TAP
+     2  PMU
+     3  PL
+  4* PSU
+     5  RPU
+        6  Cortex-R5 #0 (Halted)
+        7  Cortex-R5 #1 (Lock Step Mode)
+     8  APU
+        9  Cortex-A53 #0 (External Debug Request, EL3(S)/A64)
+       10  Cortex-A53 #1 (Power On Reset)
+       11  Cortex-A53 #2 (Power On Reset)
+       12  Cortex-A53 #3 (Power On Reset)
 xsct% mwr 0xff5e0200 0x0100
 xsct% mrd 0xff5e0200
 FF5E0200:   00000100
@@ -31,3 +44,7 @@ FF5E0200:   00000002
 xsct% mwr 0xff5e0200 0x0e000
 xsct% mrd 0xff5e0200
 FF5E0200:   0000E002
+
+xsct% mwr 0xff5e0200 0x0e100
+xsct% mrd 0xff5e0200
+FF5E0200:   0000E10E
